@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Tic-Tac-Toe AI</title>
+  <style>
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    margin: 50px 200px;
+    border: 2px solid;
+    border-radius: 2px;
+  }
+  .scores {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  .score-title {
+    font-size: 26px;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .score {
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <canvas id="board" width="500" height="500"></canvas>
+  </div>
+  <div class="scores">
+    <div class="score-title"><u>Win</u><br><div class="score" id="win">0</div></div>
+    <div class="score-title"><u>Loss</u><br><div class="score" id="loss">0</div></div>
+    <div class="score-title"><u>Draw</u><br><div class="score" id="draw">0</div></div>
+  </div>
+  <script src="tictactoe.js"></script>
+</body>
+</html>
